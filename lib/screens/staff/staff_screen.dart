@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quan_ly_phong_khach_san/screens/room/specific_room/specific_room_screen.dart';
-import 'package:flutter_quan_ly_phong_khach_san/widget/room_select_button.dart';
+import 'package:flutter_quan_ly_phong_khach_san/widget/staff_button_ct.dart';
 
-//Phòng phân tầng
-class RomScreen extends StatefulWidget {
-  const RomScreen({Key? key}) : super(key: key);
+class StaffScreen extends StatefulWidget {
+  const StaffScreen({Key? key}) : super(key: key);
 
   @override
-  _RomScreenState createState() => _RomScreenState();
+  _StaffScreenState createState() => _StaffScreenState();
 }
 
-class _RomScreenState extends State<RomScreen> {
+class _StaffScreenState extends State<StaffScreen> {
   late Size size;
   @override
   Widget build(BuildContext context) {
@@ -44,76 +42,56 @@ class _RomScreenState extends State<RomScreen> {
               height: size.height * 0.04,
             ),
             GestureDetector(
-              onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => SpecificRoomScreen())),
-              child: SelectButton(
-                  size: size,
-                  nameTitle: 'Tầng 1',
-                  nameContents: 'Tuy cập vào tầng 1.',
-                  imgRoom: "assets/images/romt1.jpg",
-                  press: () => null),
-            ),
-            SizedBox(
-              height: size.height * 0.04,
-            ),
-            GestureDetector(
-              onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => SpecificRoomScreen())),
-              child: SelectButton(
-                  size: size,
-                  nameTitle: 'Tầng 2',
-                  nameContents: 'Tuy cập vào tầng 1.',
-                  imgRoom: "assets/images/rom_t2.jpg",
-                  press: () => null),
-            ),
-            SizedBox(
-              height: size.height * 0.04,
-            ),
-            GestureDetector(
-              onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => SpecificRoomScreen())),
-              child: SelectButton(
+              onTap: () => null,
+              child: StaffButtonCT(
+                imgRoom: "assets/images/letan_staff.jpg",
+                nameTitle: 'Nhân Viên Lễ tân',
+                nameContents: 'Hỗ trợ ',
                 size: size,
                 press: () => null,
-                nameTitle: 'Tầng 3',
-                nameContents: 'Tuy cập vào tầng 1.',
-                imgRoom: "assets/images/rom_t3.jpg",
               ),
             ),
             SizedBox(
               height: size.height * 0.04,
             ),
             GestureDetector(
-              onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => SpecificRoomScreen())),
-              child: SelectButton(
+              onTap: () => null,
+              child: StaffButtonCT(
+                imgRoom: "assets/images/kythuat_staff.jpg",
+                nameTitle: 'Nhân Viên Kỹ thuật',
+                nameContents: 'Hỗ trợ ',
                 size: size,
                 press: () => null,
-                nameTitle: 'Tầng 4',
-                nameContents: 'Tuy cập vào tầng 1.',
-                imgRoom: "assets/images/romt4.jpg",
               ),
             ),
             SizedBox(
               height: size.height * 0.04,
             ),
-            SelectButton(
-              size: size,
-              press: () => null,
-              nameTitle: 'Tầng 5',
-              nameContents: 'Tuy cập vào tầng 1.',
-              imgRoom: "assets/images/room_t5.jpg",
+            GestureDetector(
+              onTap: () => null,
+              child: StaffButtonCT(
+                imgRoom: "assets/images/ben_staff.jpg",
+                nameTitle: 'Nhân Viên Bếp',
+                nameContents: 'Hỗ trợ ',
+                size: size,
+                press: () => null,
+              ),
             ),
             SizedBox(
-              height: size.height * 0.02,
+              height: size.height * 0.04,
+            ),
+            GestureDetector(
+              onTap: () => null,
+              child: StaffButtonCT(
+                imgRoom: "assets/images/vesinh_staff.jpg",
+                nameTitle: 'Nhân Viên Vệ Sinh',
+                nameContents: 'Hỗ trợ ',
+                size: size,
+                press: () => null,
+              ),
+            ),
+            SizedBox(
+              height: size.height * 0.04,
             ),
           ],
         ),
@@ -136,7 +114,7 @@ class _RomScreenState extends State<RomScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Hotel floor',
+            'Nhâp Viên',
             style: TextStyle(
                 fontSize: 21, color: Colors.white, fontWeight: FontWeight.bold),
           ),
@@ -144,7 +122,7 @@ class _RomScreenState extends State<RomScreen> {
             height: size.height * 0.008,
           ),
           Text(
-            'Chọn tầng muốn xem',
+            'Chọn Nhân Viên cần hỗ trơ',
             style: TextStyle(
               fontSize: 14,
               color: Colors.white,

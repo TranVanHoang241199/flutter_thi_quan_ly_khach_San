@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quan_ly_phong_khach_san/screens/Customer/customer_screen.dart';
+import 'package:flutter_quan_ly_phong_khach_san/screens/note/note_screen.dart';
 import 'package:flutter_quan_ly_phong_khach_san/screens/notify/notify_screen.dart';
 import 'package:flutter_quan_ly_phong_khach_san/screens/room/room_screen.dart';
 import 'package:flutter_quan_ly_phong_khach_san/screens/signin/signin_screen.dart';
+import 'package:flutter_quan_ly_phong_khach_san/screens/staff/staff_screen.dart';
 
 import 'home_screen.dart';
 
@@ -56,16 +58,10 @@ class Navbar extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => CustomerScreen())),
           ),
           ListTile(
-            leading: Icon(Icons.manage_accounts_rounded),
-            title: Text('Phục vụ'),
-            onTap: () => Navigator.push(
-                context, MaterialPageRoute(builder: (context) => HomeScreen())),
-          ),
-          ListTile(
             leading: Icon(Icons.account_tree_outlined),
             title: Text('Nhân Viên'),
-            onTap: () => Navigator.push(
-                context, MaterialPageRoute(builder: (context) => HomeScreen())),
+            onTap: () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => StaffScreen())),
           ),
           ListTile(
             leading: Icon(Icons.notifications),
@@ -98,7 +94,8 @@ class Navbar extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.description),
             title: Text('Ghi chú'),
-            onTap: () => null,
+            onTap: () => Navigator.push(
+                context, MaterialPageRoute(builder: (context) => NoteScreen())),
           ),
           Divider(),
           ListTile(

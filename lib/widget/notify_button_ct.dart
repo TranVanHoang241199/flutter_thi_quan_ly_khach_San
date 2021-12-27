@@ -67,7 +67,7 @@ class NotifyButtonCT extends StatelessWidget {
                 color: Colors.grey[350],
                 width: size.width * 0.02,
                 height: size.height * 0.05,
-                child: Icon(Icons.phone_enabled_outlined),
+                child: Icon(Icons.pending),
               ),
             ),
           )
