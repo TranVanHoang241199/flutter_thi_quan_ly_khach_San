@@ -15,6 +15,7 @@ class _RomScreenState extends State<RomScreen> {
   Widget build(BuildContext context) {
     size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.black,
         actions: [
@@ -42,51 +43,66 @@ class _RomScreenState extends State<RomScreen> {
             SizedBox(
               height: size.height * 0.04,
             ),
-            SelectButton(
-              size: size,
-              ontapButton: () => Navigator.push(
+            GestureDetector(
+              onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(
                       builder: (context) => SpecificRoomScreen())),
-              nameTitle: 'Tầng 1',
-              nameContents: 'Tuy cập vào tầng 1.',
+              child: SelectButton(
+                  size: size,
+                  nameTitle: 'Tầng 1',
+                  nameContents: 'Tuy cập vào tầng 1.',
+                  imgRoom: "assets/images/romt1.jpg",
+                  press: () => null),
             ),
             SizedBox(
               height: size.height * 0.04,
             ),
             SelectButton(
-              size: size,
-              ontapButton: () => null,
-              nameTitle: 'Tầng 2',
-              nameContents: 'Tuy cập vào tầng 1.',
-            ),
+                size: size,
+                nameTitle: 'Tầng 2',
+                nameContents: 'Tuy cập vào tầng 1.',
+                imgRoom: "assets/images/rom_t2.jpg",
+                press: () => null),
             SizedBox(
               height: size.height * 0.04,
             ),
             SelectButton(
               size: size,
-              ontapButton: () => null,
+              press: () => null,
               nameTitle: 'Tầng 3',
               nameContents: 'Tuy cập vào tầng 1.',
+              imgRoom: "assets/images/rom_t3.jpg",
+            ),
+            SizedBox(
+              height: size.height * 0.04,
+            ),
+            GestureDetector(
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => SpecificRoomScreen())),
+              child: SelectButton(
+                size: size,
+                press: () => null,
+                nameTitle: 'Tầng 4',
+                nameContents: 'Tuy cập vào tầng 1.',
+                imgRoom: "assets/images/romt4.jpg",
+              ),
             ),
             SizedBox(
               height: size.height * 0.04,
             ),
             SelectButton(
               size: size,
-              ontapButton: () => null,
-              nameTitle: 'Tầng 4',
-              nameContents: 'Tuy cập vào tầng 1.',
-            ),
-            SizedBox(
-              height: size.height * 0.04,
-            ),
-            SelectButton(
-              size: size,
-              ontapButton: () => null,
+              press: () => null,
               nameTitle: 'Tầng 5',
               nameContents: 'Tuy cập vào tầng 1.',
-            )
+              imgRoom: "assets/images/room_t5.jpg",
+            ),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
           ],
         ),
       ),
