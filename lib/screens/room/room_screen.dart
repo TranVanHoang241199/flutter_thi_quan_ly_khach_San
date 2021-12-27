@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_quan_ly_phong_khach_san/screens/specific_room/specific_room_screen.dart';
 import 'package:flutter_quan_ly_phong_khach_san/widget/room_select_button.dart';
 
+//Phòng phân tầng
 class RomScreen extends StatefulWidget {
   const RomScreen({Key? key}) : super(key: key);
 
@@ -15,7 +16,6 @@ class _RomScreenState extends State<RomScreen> {
   Widget build(BuildContext context) {
     size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.black,
         actions: [

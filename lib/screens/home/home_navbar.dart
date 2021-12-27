@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_quan_ly_phong_khach_san/screens/Customer/customer_screen.dart';
 import 'package:flutter_quan_ly_phong_khach_san/screens/room/room_screen.dart';
 import 'package:flutter_quan_ly_phong_khach_san/screens/signin/signin_screen.dart';
 
 import 'home_screen.dart';
 
+// Menu
 class Navbar extends StatelessWidget {
   const Navbar({Key? key}) : super(key: key);
 
@@ -49,8 +51,8 @@ class Navbar extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.person),
             title: Text('Khách hàng'),
-            onTap: () => Navigator.push(
-                context, MaterialPageRoute(builder: (context) => HomeScreen())),
+            onTap: () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => CustomerScreen())),
           ),
           ListTile(
             leading: Icon(Icons.manage_accounts_rounded),
