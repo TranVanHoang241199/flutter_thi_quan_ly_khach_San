@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_quan_ly_phong_khach_san/screens/staff/staff_menber/satff_menber_screen.dart';
 import 'package:flutter_quan_ly_phong_khach_san/widget/staff_button_ct.dart';
 
 class StaffScreen extends StatefulWidget {
@@ -42,7 +43,8 @@ class _StaffScreenState extends State<StaffScreen> {
               height: size.height * 0.04,
             ),
             GestureDetector(
-              onTap: () => null,
+              onTap: () => Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => StaffMenberScreen())),
               child: StaffButtonCT(
                 imgRoom: "assets/images/letan_staff.jpg",
                 nameTitle: 'Nhân Viên Lễ tân',
@@ -55,7 +57,8 @@ class _StaffScreenState extends State<StaffScreen> {
               height: size.height * 0.04,
             ),
             GestureDetector(
-              onTap: () => null,
+              onTap: () => Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => StaffMenberScreen())),
               child: StaffButtonCT(
                 imgRoom: "assets/images/kythuat_staff.jpg",
                 nameTitle: 'Nhân Viên Kỹ thuật',
@@ -68,7 +71,8 @@ class _StaffScreenState extends State<StaffScreen> {
               height: size.height * 0.04,
             ),
             GestureDetector(
-              onTap: () => null,
+              onTap: () => Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => StaffMenberScreen())),
               child: StaffButtonCT(
                 imgRoom: "assets/images/ben_staff.jpg",
                 nameTitle: 'Nhân Viên Bếp',
@@ -81,7 +85,8 @@ class _StaffScreenState extends State<StaffScreen> {
               height: size.height * 0.04,
             ),
             GestureDetector(
-              onTap: () => null,
+              onTap: () => Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => StaffMenberScreen())),
               child: StaffButtonCT(
                 imgRoom: "assets/images/vesinh_staff.jpg",
                 nameTitle: 'Nhân Viên Vệ Sinh',
@@ -114,7 +119,7 @@ class _StaffScreenState extends State<StaffScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Nhâp Viên',
+            'Nhân Viên',
             style: TextStyle(
                 fontSize: 21, color: Colors.white, fontWeight: FontWeight.bold),
           ),
