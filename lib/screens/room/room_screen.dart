@@ -58,21 +58,33 @@ class _RomScreenState extends State<RomScreen> {
             SizedBox(
               height: size.height * 0.04,
             ),
-            SelectButton(
-                size: size,
-                nameTitle: 'Tầng 2',
-                nameContents: 'Tuy cập vào tầng 1.',
-                imgRoom: "assets/images/rom_t2.jpg",
-                press: () => null),
+            GestureDetector(
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => SpecificRoomScreen())),
+              child: SelectButton(
+                  size: size,
+                  nameTitle: 'Tầng 2',
+                  nameContents: 'Tuy cập vào tầng 1.',
+                  imgRoom: "assets/images/rom_t2.jpg",
+                  press: () => null),
+            ),
             SizedBox(
               height: size.height * 0.04,
             ),
-            SelectButton(
-              size: size,
-              press: () => null,
-              nameTitle: 'Tầng 3',
-              nameContents: 'Tuy cập vào tầng 1.',
-              imgRoom: "assets/images/rom_t3.jpg",
+            GestureDetector(
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => SpecificRoomScreen())),
+              child: SelectButton(
+                size: size,
+                press: () => null,
+                nameTitle: 'Tầng 3',
+                nameContents: 'Tuy cập vào tầng 1.',
+                imgRoom: "assets/images/rom_t3.jpg",
+              ),
             ),
             SizedBox(
               height: size.height * 0.04,

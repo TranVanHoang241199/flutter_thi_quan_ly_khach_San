@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_quan_ly_phong_khach_san/widget/notify_button_ct.dart';
 
 //Thông báo
 class NotifyScreen extends StatefulWidget {
@@ -27,6 +28,11 @@ class _NotifyScreenState extends State<NotifyScreen> {
       body: Column(
         children: [_head(), _content()],
       ),
+      floatingActionButton: new FloatingActionButton(
+        backgroundColor: Colors.black,
+        onPressed: () => null,
+        child: Icon(Icons.message),
+      ),
     );
   }
 
@@ -37,7 +43,66 @@ class _NotifyScreenState extends State<NotifyScreen> {
         width: size.width,
         child: ListView(
           children: [
-            Container(),
+            NotifyButtonCT(
+              size: size,
+              img: 'assets/images/imgPr.JPG',
+              titleName: 'Trần Văn Hoàng QL',
+              content: 'Yêu cầu hỗ trợ gấp 2 nhân viện dọn dẹp...',
+            ),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
+            NotifyButtonCT(
+              size: size,
+              img: 'assets/images/imgPr.JPG',
+              titleName: 'Nguyễn Thị Lành NV',
+              content: 'Hỗ trợ tư vấn trả phòng cho khách tầng 5...',
+            ),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
+            NotifyButtonCT(
+              size: size,
+              img: 'assets/images/imgPr.JPG',
+              titleName: 'Đào Thị Gấm NV',
+              content: 'Phòng 5 Tầng 2 yêu cầu hỗ trợ.',
+            ),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
+            NotifyButtonCT(
+              size: size,
+              img: 'assets/images/imgPr.JPG',
+              titleName: 'Trần Văn Hoàng QL',
+              content: 'Yêu cầu hỗ trợ gấp 2 nhân viện dọn dẹp...',
+            ),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
+            NotifyButtonCT(
+              size: size,
+              img: 'assets/images/imgPr.JPG',
+              titleName: 'Trần Văn Hoàng QL',
+              content: 'Yêu cầu hỗ trợ gấp 2 nhân viện dọn dẹp...',
+            ),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
+            NotifyButtonCT(
+              size: size,
+              img: 'assets/images/imgPr.JPG',
+              titleName: 'Trần Văn Hoàng QL',
+              content: 'Yêu cầu hỗ trợ gấp 2 nhân viện dọn dẹp...',
+            ),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
+            NotifyButtonCT(
+              size: size,
+              img: 'assets/images/imgPr.JPG',
+              titleName: 'Trần Văn Hoàng QL',
+              content: 'Yêu cầu hỗ trợ gấp 2 nhân viện dọn dẹp...',
+            ),
             SizedBox(
               height: size.height * 0.02,
             ),

@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quan_ly_phong_khach_san/widget/notify_button.dart';
-import 'package:flutter_quan_ly_phong_khach_san/widget/specific_room_ql_ct.dart';
-
-import 'customer_screen.dart';
+import 'package:flutter_quan_ly_phong_khach_san/widget/customer_button_ct.dart';
 
 //Khách Hàng
 class CustomerScreen extends StatefulWidget {
@@ -42,7 +39,7 @@ class _CustomerScreenState extends State<CustomerScreen> {
         width: size.width,
         child: ListView(
           children: [
-            NotifyButton(
+            CustomerButton(
               size: size,
               img: 'assets/images/imgPr.JPG',
               title: 'Trần Văn Hoàng',
@@ -51,7 +48,7 @@ class _CustomerScreenState extends State<CustomerScreen> {
             SizedBox(
               height: size.height * 0.02,
             ),
-            NotifyButton(
+            CustomerButton(
               size: size,
               img: 'assets/images/imgPr.JPG',
               title: 'Trần Văn Hoàng',
@@ -60,7 +57,7 @@ class _CustomerScreenState extends State<CustomerScreen> {
             SizedBox(
               height: size.height * 0.02,
             ),
-            NotifyButton(
+            CustomerButton(
               size: size,
               img: 'assets/images/imgPr.JPG',
               title: 'Trần Văn Hoàng',
@@ -69,7 +66,7 @@ class _CustomerScreenState extends State<CustomerScreen> {
             SizedBox(
               height: size.height * 0.02,
             ),
-            NotifyButton(
+            CustomerButton(
               size: size,
               img: 'assets/images/imgPr.JPG',
               title: 'Trần Văn Hoàng',
@@ -78,7 +75,7 @@ class _CustomerScreenState extends State<CustomerScreen> {
             SizedBox(
               height: size.height * 0.02,
             ),
-            NotifyButton(
+            CustomerButton(
               size: size,
               img: 'assets/images/imgPr.JPG',
               title: 'Trần Văn Hoàng',
@@ -87,7 +84,7 @@ class _CustomerScreenState extends State<CustomerScreen> {
             SizedBox(
               height: size.height * 0.02,
             ),
-            NotifyButton(
+            CustomerButton(
               size: size,
               img: 'assets/images/imgPr.JPG',
               title: 'Trần Văn Hoàng',

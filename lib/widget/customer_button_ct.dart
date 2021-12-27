@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NotifyButton extends StatelessWidget {
+class CustomerButton extends StatelessWidget {
   final String img;
 
   final String title;
 
   final String content;
 
-  const NotifyButton({
+  const CustomerButton({
     Key? key,
     required this.size,
     required this.img,
