@@ -112,7 +112,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     return Image.asset(
       "assets/images/bg_ks.jpg",
       fit: BoxFit.cover,
-      height: size.height * 1,
+      width: size.width,
+      height: size.height,
     );
   }
 }

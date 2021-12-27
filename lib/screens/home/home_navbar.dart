@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quan_ly_phong_khach_san/screens/Customer/customer_screen.dart';
+import 'package:flutter_quan_ly_phong_khach_san/screens/notify/notify_screen.dart';
 import 'package:flutter_quan_ly_phong_khach_san/screens/room/room_screen.dart';
 import 'package:flutter_quan_ly_phong_khach_san/screens/signin/signin_screen.dart';
 
@@ -38,12 +39,12 @@ class Navbar extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.person),
+            leading: Icon(Icons.home),
             title: Text('Trang chủ'),
             onTap: () => Navigator.of(context).pop(HomeScreen()),
           ),
           ListTile(
-            leading: Icon(Icons.motorcycle),
+            leading: Icon(Icons.room_outlined),
             title: Text('Quản lý phòng'),
             onTap: () => Navigator.push(
                 context, MaterialPageRoute(builder: (context) => RomScreen())),
@@ -69,8 +70,8 @@ class Navbar extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.notifications),
             title: Text('Thông Báo'),
-            onTap: () => Navigator.push(
-                context, MaterialPageRoute(builder: (context) => HomeScreen())),
+            onTap: () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => NotifyScreen())),
             trailing: ClipOval(
               child: Container(
                 color: Colors.red,
